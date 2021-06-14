@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 </head>
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-    <button id="p1Button">+1 Player 1 Score </button>
-    <button id="p2Button">+1 Player 2 Score </button>
-    <button id="reset">reset</button>
+    
+    <div class="container">
+        <div class="cloumns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image 2by1">
+                            <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80" alt="picture">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                          Score Keeper
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="subtitle">Keep track of your scores!</p>
 
+                        <label for="playto" class="label is-large is-inline">Playing upto:</label>
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+
+                        </div>
+
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button is-info card-footer-item">+1 Player 1 Score</button>
+                        <button id="p2Button" class="button is-primary card-footer-item">+1 Player 2 Score</button>
+                        <button id="reset" class="button is-danger card-footer-item">Reset</button>
+                      
+                    </footer>
+                  </div>
+            </div> 
+        </div>
+    </div>
+
+    
+
+
+    
+
+    
+    
     <script src="app.js"></script>
 </body>
 </html>
